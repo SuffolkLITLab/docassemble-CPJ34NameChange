@@ -24,6 +24,7 @@ code: |
 ---
 # mandatory: True
 event: download_cari
+id: "your document is ready"
 question: |
   Your document is ready.
 subquestion: |
@@ -50,12 +51,14 @@ attachments:
       "mothers_maiden_name": ${ mothers_maiden_name }
       "other_names_or_alias": ${ other_names_or_alias }
 ---
+id: "what is the case name"
 question: |
   What is the case name?
 fields:
   - 'Case Name': case_name
     input type: text
 ---
+id: "what is the division of the probate and family court where your action is pending"
 question: |
   What is the division of the Probate and Family Court where your action is pending?
 fields:
@@ -76,39 +79,46 @@ fields:
       - Suffolk
       - Worcester
 ---
+id: "what is your current name"
 question: |
   What is your current name?
 fields:
   - 'Current Name': current_name
 ---
+id: "what is your date of birth"
 question: |
   What is your date of birth?
 fields:
   - 'Date of Birth': date_of_birth
     datatype: date
 ---
+id: "what is the docket number of this proceeding"
 question: |
   What is the docket number of this proceeding?
 fields:
   - 'Docket Number': docket_number
 ---
+id: "what are the last four digits of your social security number"
 question: |
   What are the last four digits of your social security number?
 fields:
   - 'Last four social': last_4_of_social
 ---
+id: "what is your mothers maiden name"
 question: |
   What is your mother's maiden name?
 fields:
   - "Mother's Maiden Name": mothers_maiden_name
     input type: text
 ---
+id: "have you used any other names or alias if yes please write them down"
 question: |
   Have you used any other names or alias? If yes, please write them down.
 fields:
   - 'Other names or alias': other_names_or_alias
     input type: area
 ---
+id: "the type of proceeding is"
 question: |
   The type of proceeding is?
 fields:
